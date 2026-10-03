@@ -1,0 +1,56 @@
+{
+  "name": "deepScodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests/**/*.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "node --check index.js",
+    "make-admin": "node scripts/makeAdmin.js make",
+    "remove-admin": "node scripts/makeAdmin.js remove",
+    "iplogs": "node scripts/viewIpLogs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "axios": "^1.19.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "googleapis": "^178.0.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "livekit-server-sdk": "^2.19.0",
+    "mongoose": "^9.7.0",
+    "morgan": "^1.11.0",
+    "multer": "^2.2.0",
+    "multer-storage-cloudinary": "^4.0.0",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.19.1",
+    "qrcode": "^1.5.4",
+    "redis": "^6.1.0",
+    "resend": "^6.14.0",
+    "slugify": "^1.6.9",
+    "socket.io": "^4.8.3",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.5.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "all-backend-code.txt"
+    ]
+  }
+}
