@@ -15,7 +15,7 @@ const mentorSchema = new mongoose.Schema(
 
     // ── Profile details ────────────────────────────────────────────────────────
     designation: { type: String, trim: true },   // e.g. "Senior 3D Artist & Blender Expert"
-    company: { type: String, trim: true },        // e.g. "DeepScode"
+    company: { type: String, trim: true },        // e.g. "deepScode"
     bio: { type: String, trim: true },
     photoUrl: { type: String, trim: true },
 

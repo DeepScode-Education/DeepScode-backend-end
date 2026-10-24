@@ -5,8 +5,8 @@ const { encrypt } = require("../utils/encryption");
 const { getOrCreateVisitorId, setVisitorCookie } = require("../utils/cookieHelper");
 
 const ALLOWED_HOSTS = [
-  "deepScode.com",
-  "www.deepScode.com",
+  "slate-academy.com",
+  "www.slate-academy.com",
 ];
 
 const IGNORED_PREFIXES = [

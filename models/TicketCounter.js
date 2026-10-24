@@ -1,6 +1,6 @@
 // models/TicketCounter.js
 //
-// Backs the deepScodeYYYYMMDD-XXXX ticket number sequence. One document per
+// Backs the deepScode-YYYYMMDD-XXXX ticket number sequence. One document per
 // calendar day (_id = "YYYYMMDD"), incremented atomically via
 // findOneAndUpdate + $inc, which MongoDB guarantees is safe under
 // concurrent requests — no separate locking needed.

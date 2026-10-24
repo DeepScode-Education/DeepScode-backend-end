@@ -68,7 +68,7 @@
 //     let govtIdImagePublicId = existingProfile?.govtIdImagePublicId;
 
 //     if (req.file) {
-//       const uploaded = await uploadToCloudinary(req.file.buffer, "deepScode/govt-ids");
+//       const uploaded = await uploadToCloudinary(req.file.buffer, "slate-academy/govt-ids");
 //       govtIdImageUrl = uploaded.secure_url;
 //       govtIdImagePublicId = uploaded.public_id;
 

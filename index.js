@@ -97,10 +97,10 @@ if (require.main === module) {
 const isProd = process.env.NODE_ENV === "production";
 
 const PRODUCTION_ORIGINS = [
-    "https://deepScode.com",
-    "https://www.deepScode.com",
-    "https://cyber-security.deepScode.com",
-    "https://data-analytics.deepScode.com",
+    "https://slate-academy.com",
+    "https://www.slate-academy.com",
+    "https://cyber-security.slate-academy.com",
+    "https://data-analytics.slate-academy.com",
 ];
 const DEV_ORIGINS = (
     process.env.DEV_ALLOWED_ORIGINS ||
@@ -256,7 +256,7 @@ if (require.main === module) {
     registerLiveClassSockets(io);
     startAutoEndJob(io);
 
-    httpServer.listen(PORT, () => {
+    httpServer.listen(PORT,"0.0.0.0", () => {
         logInfo(`Server running on port ${PORT}`);
     });
 }

@@ -34,7 +34,7 @@ test.beforeEach(() => {
             slug: 'alice-johnson',
             fullName: 'Alice Johnson',
             designation: 'Senior Mentor',
-            company: 'DeepScode',
+            company: 'deepScode',
             bio: 'Experienced mentor',
             photoUrl: 'https://example.com/photo.jpg',
             expertise: ['JavaScript', 'Node.js'],

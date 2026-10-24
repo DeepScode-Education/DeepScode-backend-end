@@ -30,31 +30,31 @@
 
 //   if (files.thumbnail?.[0]) {
 //     const r = await uploadBufferToCloudinary(
-//       files.thumbnail[0].buffer, "deepScode/courses/thumbnails", "image"
+//       files.thumbnail[0].buffer, "slate-academy/courses/thumbnails", "image"
 //     );
 //     urls.thumbnail = r.secure_url;
 //   }
 //   if (files.bannerImage?.[0]) {
 //     const r = await uploadBufferToCloudinary(
-//       files.bannerImage[0].buffer, "deepScode/courses/banners", "image"
+//       files.bannerImage[0].buffer, "slate-academy/courses/banners", "image"
 //     );
 //     urls.bannerImage = r.secure_url;
 //   }
 //   if (files.syllabusPdf?.[0]) {
 //     const r = await uploadBufferToCloudinary(
-//       files.syllabusPdf[0].buffer, "deepScode/courses/pdfs", "raw"
+//       files.syllabusPdf[0].buffer, "slate-academy/courses/pdfs", "raw"
 //     );
 //     urls["downloads.syllabusPdf"] = r.secure_url;
 //   }
 //   if (files.brochurePdf?.[0]) {
 //     const r = await uploadBufferToCloudinary(
-//       files.brochurePdf[0].buffer, "deepScode/courses/pdfs", "raw"
+//       files.brochurePdf[0].buffer, "slate-academy/courses/pdfs", "raw"
 //     );
 //     urls["downloads.brochurePdf"] = r.secure_url;
 //   }
 //   if (files.promoVideo?.[0]) {
 //     const r = await uploadBufferToCloudinary(
-//       files.promoVideo[0].buffer, "deepScode/courses/videos", "video"
+//       files.promoVideo[0].buffer, "slate-academy/courses/videos", "video"
 //     );
 //     urls.promoVideo = r.secure_url;
 //   }

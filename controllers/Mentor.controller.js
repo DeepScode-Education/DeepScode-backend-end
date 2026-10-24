@@ -36,7 +36,7 @@
 // const uploadBufferToCloudinary = (buffer) =>
 //   new Promise((resolve, reject) => {
 //     const stream = cloudinary.uploader.upload_stream(
-//       { folder: "deepScode/mentors", resource_type: "image" },
+//       { folder: "slate-academy/mentors", resource_type: "image" },
 //       (err, result) => (err ? reject(err) : resolve(result))
 //     );
 //     stream.end(buffer);
@@ -148,9 +148,9 @@
 
 //     const expertise = parseExpertise(req.body.expertise);
 
-//     // Default password: name ke first word + @deepScode123
+//     // Default password: name ke first word + @Slate123
 //     // Admin baad mein Staff Management se reset kar sakta hai
-//     const defaultPassword = `deepScode@1234`;
+//     const defaultPassword = `Slate@1234`;
 //     const hashedPassword = await bcrypt.hash(defaultPassword, 10);
 
 //     const slug = await generateUniqueMentorSlug(name.trim());

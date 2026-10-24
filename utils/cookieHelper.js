@@ -7,7 +7,7 @@
 
 const crypto = require("crypto");
 
-const VISITOR_COOKIE_NAME = "svid"; // "deepScode visitor id"
+const VISITOR_COOKIE_NAME = "svid"; // "slate visitor id"
 const VISITOR_COOKIE_MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000; // 1 year
 
 /**

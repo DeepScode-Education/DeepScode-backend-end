@@ -109,6 +109,8 @@ const PERMISSION_GROUPS = [
       { permission: "students.create", label: "Create" },
       { permission: "students.edit", label: "Edit" },
       { permission: "students.delete", label: "Delete" },
+       { permission: "students.approve", label: "Approve" },
+    { permission: "students.reject", label: "Reject" },
     ],
   },
   {

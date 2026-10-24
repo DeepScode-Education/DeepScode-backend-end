@@ -279,7 +279,7 @@
 //     console.log("💾 [FORGOT PASSWORD] Reset token saved to DB (expires in 30 min)");
 //     console.log("🔗 [FORGOT PASSWORD] Raw token (for testing only):", rawToken);
 
-//     const frontendBaseUrl = process.env.FRONTEND_URL || "https://deepScode.com";
+//     const frontendBaseUrl = process.env.FRONTEND_URL || "https://slate-academy.com";
 //     const resetUrl = `${frontendBaseUrl}/reset-password/${rawToken}`;
 
 //     console.log("🌐 [FORGOT PASSWORD] Reset URL:", resetUrl);
@@ -288,12 +288,12 @@
 //       const emailResult = await resend.emails.send({
 //         from: process.env.RESEND_FROM_EMAIL,
 //         to: normalizedEmail,
-//         subject: "Reset Your DeepScode Password",
+//         subject: "Reset Your Slate Academy Password",
 //         html: `
 //           <div style="font-family:sans-serif; max-width:480px; margin:0 auto;">
 //             <h2>Password Reset Request</h2>
 //             <p>Hi ${user.fullName},</p>
-//             <p>We received a request to reset your DeepScode account password. Click the button below to set a new password. This link will expire in 30 minutes.</p>
+//             <p>We received a request to reset your Slate Academy account password. Click the button below to set a new password. This link will expire in 30 minutes.</p>
 //             <p style="margin: 24px 0;">
 //               <a href="${resetUrl}" style="background-color:#0037FF; color:#ffffff; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:600;">
 //                 Reset Password
@@ -384,12 +384,12 @@
 //       const confirmResult = await resend.emails.send({
 //         from: process.env.RESEND_FROM_EMAIL,
 //         to: user.email,
-//         subject: "Your DeepScode Password Was Changed",
+//         subject: "Your Slate Academy Password Was Changed",
 //         html: `
 //           <div style="font-family:sans-serif">
 //             <h2>Password Changed</h2>
 //             <p>Hi ${user.fullName},</p>
-//             <p>This is a confirmation that your DeepScode account password was just changed. If this wasn't you, please contact the admin immediately.</p>
+//             <p>This is a confirmation that your Slate Academy account password was just changed. If this wasn't you, please contact the admin immediately.</p>
 //           </div>
 //         `,
 //       });
@@ -737,12 +737,12 @@ const forgotPassword = async (req, res) => {
       const emailResult = await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL,
         to: normalizedEmail,
-        subject: "Your DeepScode Password Reset OTP",
+        subject: "Your deepScode Password Reset OTP",
         html: `
           <div style="font-family:sans-serif; max-width:480px; margin:0 auto;">
             <h2>Password Reset Request</h2>
             <p>Hi ${user.fullName},</p>
-            <p>Use the OTP below to reset your DeepScode account password. This code expires in 10 minutes.</p>
+            <p>Use the OTP below to reset your deepScode account password. This code expires in 10 minutes.</p>
             <h1 style="letter-spacing:4px; background:#f1f2f4; padding:16px; text-align:center; border-radius:8px;">${otp}</h1>
             <p>If you didn't request this, you can safely ignore this email — your password will remain unchanged.</p>
           </div>
@@ -879,12 +879,12 @@ const resetPassword = async (req, res) => {
       const confirmResult = await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL,
         to: user.email,
-        subject: "Your DeepScode Password Was Changed",
+        subject: "Your deepScode Password Was Changed",
         html: `
           <div style="font-family:sans-serif">
             <h2>Password Changed</h2>
             <p>Hi ${user.fullName},</p>
-            <p>This is a confirmation that your DeepScode account password was just changed. If this wasn't you, please contact the admin immediately.</p>
+            <p>This is a confirmation that your deepScode account password was just changed. If this wasn't you, please contact the admin immediately.</p>
           </div>
         `,
       });

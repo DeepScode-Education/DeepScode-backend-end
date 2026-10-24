@@ -414,10 +414,10 @@ const addStudent = async (req, res) => {
         await resend.emails.send({
           from: process.env.RESEND_FROM_EMAIL,
           to: normalizedEmail,
-          subject: "Your DeepScode Student Account",
+          subject: "Your deepScode Student Account",
           html: `
             <div style="font-family:sans-serif">
-              <h2>Welcome to DeepScode, ${student.fullName}!</h2>
+              <h2>Welcome to deepScode, ${student.fullName}!</h2>
               <p>Your student account has been created by an administrator. Use the credentials below to log in:</p>
               <p><strong>Student ID:</strong> ${studentId}</p>
               <p><strong>Password:</strong> ${plainPassword}</p>

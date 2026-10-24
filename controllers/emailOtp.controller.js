@@ -37,10 +37,10 @@ const sendOtp = async (req, res) => {
     const result = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL,
       to: email,
-      subject: "DeepScode Email Verification",
+      subject: "deepScode Email Verification",
       html: `
         <div style="font-family:sans-serif">
-          <h2>DeepScode</h2>
+          <h2>deepScode</h2>
           <p>Your verification code is:</p>
           <h1>${otp}</h1>
           <p>This code expires in 5 minutes.</p>

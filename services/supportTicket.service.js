@@ -21,7 +21,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const ADMIN_NOTIFY_EMAIL = process.env.SUPPORT_TICKET_ADMIN_EMAIL || "info@deepScode.com";
 
 // ── Ticket number generation ────────────────────────────────────────────────
-// Format: deepScodeYYYYMMDD-XXXX (4-digit, zero-padded, resets daily).
+// Format: SLATE-YYYYMMDD-XXXX (4-digit, zero-padded, resets daily).
 // findOneAndUpdate + $inc + upsert is an atomic MongoDB operation, so two
 // concurrent ticket creations on the same day can never receive the same
 // sequence number — no separate locking/transactions required.
@@ -38,7 +38,7 @@ const generateTicketNumber = async () => {
     { new: true, upsert: true }
   );
 
-  return `deepScode${dateKey}-${String(counter.seq).padStart(4, "0")}`;
+  return `deepScode-${dateKey}-${String(counter.seq).padStart(4, "0")}`;
 };
 
 // ── Small HTML escape — the codebase's existing email templates don't
@@ -55,14 +55,14 @@ const wrapEmail = (title, bodyHtml) => `
   <div style="font-family:sans-serif; max-width:560px; margin:0 auto;">
     <h2 style="color:#0037FF;">${escapeHtml(title)}</h2>
     ${bodyHtml}
-    <p style="margin-top:24px; font-size:12px; color:#888;">DeepScode Support</p>
+    <p style="margin-top:24px; font-size:12px; color:#888;">deepScode Academy Support</p>
   </div>
 `;
 
 const infoRow = (label, value) =>
   `<tr><td style="padding:4px 8px 4px 0; white-space:nowrap;"><strong>${escapeHtml(label)}:</strong></td><td>${escapeHtml(value || "-")}</td></tr>`;
 
-// ── Admin notification email — sent to info@deepScode.com on creation ──
+// ── Admin notification email — sent to info@slate-academy.com on creation ──
 const sendAdminTicketEmail = async (ticket) => {
   try {
     await resend.emails.send({
@@ -113,7 +113,7 @@ const sendUserConfirmationEmail = async (ticket) => {
           ${infoRow("Description", ticket.description)}
           ${infoRow("Current Status", ticket.status)}
         </table>
-        <p>This is a confirmation from the DeepScode support team that your ticket is being tracked.</p>
+        <p>This is a confirmation from the deepScode support team that your ticket is being tracked.</p>
         `
       ),
     });

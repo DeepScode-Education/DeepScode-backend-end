@@ -218,13 +218,13 @@
 //   }
 
 //   // Brand new student account
-//   const tempPassword   = lead.mobileNumber || "deepScode@1234";
+//   const tempPassword   = lead.mobileNumber || "Slate@1234";
 //   const hashedPassword = await bcrypt.hash(tempPassword, 10);
 //   const studentId      = await generateUniqueStudentId();
 
 //   const student = await User.create({
 //     fullName:   lead.fullName,
-//     email:      lead.email || `${lead.mobileNumber}@deepScodenoemail.local`,
+//     email:      lead.email || `${lead.mobileNumber}@slate-noemail.local`,
 //     password:   hashedPassword,
 //     role:       "student",
 //     status:     "approved",
@@ -2363,7 +2363,7 @@ const performConversion = async (lead, actingUser) => {
 
   const student = await User.create({
     fullName:   lead.fullName,
-    email:      lead.email || `${lead.mobileNumber}@deepScodenoemail.local`,
+    email:      lead.email || `${lead.mobileNumber}@deepScode-noemail.local`,
     password:   hashedPassword,
     role:       "student",
     status:     "approved",

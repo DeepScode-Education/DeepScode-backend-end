@@ -16,7 +16,7 @@ const send = (res, status, success, message, data, extra = {}) => {
   return res.status(status).json(body);
 };
 
-const FRONTEND_URL = process.env.FRONTEND_URL || "https://deepScode.com";
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://slate-academy.com";
 const buildVerificationUrl = (certificateId) => `${FRONTEND_URL}/verify/${certificateId}`;
 
 const uploadPdfToCloudinary = (buffer, certificateId) =>

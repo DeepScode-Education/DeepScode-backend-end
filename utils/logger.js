@@ -3,7 +3,7 @@
 // Dependency-free structured logging. Every error that reaches the
 // centralized handler (or process.on("uncaughtException"/"unhandledRejection"))
 // is printed to the terminal with full context AND appended to
-// deepScodeServer/logs/error.log, so nothing is lost once the terminal scrolls
+// slate-Server/logs/error.log, so nothing is lost once the terminal scrolls
 // away.
 //
 // This intentionally does NOT use a logging library (winston/pino) to avoid

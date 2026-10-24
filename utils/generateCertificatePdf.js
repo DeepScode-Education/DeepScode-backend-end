@@ -1,6 +1,6 @@
 // utils/generateCertificatePdf.js
 //
-// Generates the official DeepScode certificate PDF by embedding the
+// Generates the official Slate Academy certificate PDF by embedding the
 // provided certificate template PDF (a real vector file, not a raster
 // image) as the background, then overlaying the dynamic student/course/
 // date/certificate-ID values on top at the positions defined in certificateLayout.js. No QR code is generated anywhere in this file.

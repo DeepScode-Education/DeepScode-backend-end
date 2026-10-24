@@ -56,7 +56,7 @@ const feeSchema = new mongoose.Schema(
       default: null,
     },
 
-    // Auto-incrementing receipt number prefix  e.g. "deepScode2025-"
+    // Auto-incrementing receipt number prefix  e.g. "deepScode-2025-"
     receiptPrefix: { type: String, default: "deepScode" },
 
     // Last receipt number issued (incremented by payment controller)

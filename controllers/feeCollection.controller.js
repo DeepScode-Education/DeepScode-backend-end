@@ -51,7 +51,7 @@ const startOfMonth = (d = new Date()) =>
 const endOfMonth = (d = new Date()) =>
   new Date(d.getFullYear(), d.getMonth() + 1, 0, 23, 59, 59, 999);
 
-// Generate receipt number: deepScodeYYYY-NNNN
+// Generate receipt number: deepScode-YYYY-NNNN
 const generateReceiptNumber = async (fee) => {
   const year = new Date().getFullYear();
   const next = (fee.lastReceiptNumber || 0) + 1;

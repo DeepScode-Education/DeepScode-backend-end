@@ -41,7 +41,7 @@ const paymentSchema = new mongoose.Schema(
     isRegistrationPayment: { type: Boolean, default: false },
 
     // ── NEW fields ────────────────────────────────────────────────────────────
-    // e.g. "deepScode2025-001"
+    // e.g. "deepScode-2025-001"
     receiptNumber: { type: String, trim: true, default: null, index: true },
 
     notes: { type: String, trim: true, default: "" },

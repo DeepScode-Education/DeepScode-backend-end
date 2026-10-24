@@ -88,7 +88,7 @@
 // //   return liveClass;
 // // };
 
-// // deepScodeserver/modules/live-class/services/liveClass.service.js
+// // slate-server/modules/live-class/services/liveClass.service.js
 
 // const endClass = async ({ mentorId, liveClassId }) => {
 //   const liveClass = await LiveClass.findById(liveClassId);
