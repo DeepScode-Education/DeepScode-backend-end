@@ -66,5 +66,9 @@ pnpm-lock.yaml
 
 get-google-refresh-token.js
 all-backend-code.txt
+# OAuth credentials and secrets
+credentials/google-oauth.json
 .env
+.env.*
+!.env.example
 scripts/

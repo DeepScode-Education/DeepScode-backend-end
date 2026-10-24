@@ -2,10 +2,8 @@ const SSR_INTERNAL_SECRET = process.env.SSR_INTERNAL_SECRET || "8cb6631265e7f2d7
 
 
 const PRODUCTION_ORIGINS = [
-  "https://slate-academy.com",
-  "https://www.slate-academy.com",
-  "https://cyber-security.slate-academy.com",
-  "https://data-analytics.slate-academy.com",
+   "https://deep-scode-front-end.vercel.app",
+    "https://www.deep-scode-front-end.vercel.app",
 ];
 const getAllowedOrigins = () => {
   if (process.env.NODE_ENV === "production") return PRODUCTION_ORIGINS;

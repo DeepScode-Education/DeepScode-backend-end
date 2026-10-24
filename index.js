@@ -97,10 +97,8 @@ if (require.main === module) {
 const isProd = process.env.NODE_ENV === "production";
 
 const PRODUCTION_ORIGINS = [
-    "https://slate-academy.com",
-    "https://www.slate-academy.com",
-    "https://cyber-security.slate-academy.com",
-    "https://data-analytics.slate-academy.com",
+    "https://deep-scode-front-end.vercel.app",
+    "https://www.deep-scode-front-end.vercel.app",
 ];
 const DEV_ORIGINS = (
     process.env.DEV_ALLOWED_ORIGINS ||
